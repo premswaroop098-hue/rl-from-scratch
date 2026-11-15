@@ -9,8 +9,8 @@ import torch
 from algos.dqn import DQNAgent
 from algos.ppo import PPOAgent
 
-SEEDS = [0, 1, 2, 3, 4]       # for a quick test use [0] and TOTAL_STEPS = 20_000
-TOTAL_STEPS = 100_000
+SEEDS = [0]       # for a quick test use [0] and TOTAL_STEPS = 20_000
+TOTAL_STEPS = 20_000
 EPS_START, EPS_END, EPS_STEPS = 1.0, 0.05, 10_000
 ROLLOUT = 2048
 GRID_POINTS = np.arange(1000, TOTAL_STEPS + 1, 1000)
